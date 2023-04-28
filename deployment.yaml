@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: naman-deployment
+  namespace: naman-lb-namespace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: naman-app
+  template:
+    metadata:
+      labels:
+        app: naman-app
+    spec:
+      containers:
+      - name: naman
+        image: naman1409/namank8s
+        ports:
+        - containerPort: 8000

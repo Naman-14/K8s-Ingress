@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service
+  namespace: naman-lb-namespace
+spec:
+  type: LoadBalancer
+  selector:
+    app: naman-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+    
