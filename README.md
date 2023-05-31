@@ -23,4 +23,6 @@ cd driver
 cd etc
 notepad.exe hosts
 Add your xyz.com below this
-Screenshot from 2023-04-20 23-16-14
+
+![image](https://github.com/Naman-14/NamanK8s-Ingress/assets/78831583/6b1c8e58-9c90-4a3f-b8ab-e87d40352b5e)
+
